@@ -4,15 +4,17 @@ Go to [_CUDA Toolkit_](https://developer.nvidia.com/cuda-downloads) download pag
 Then there will be a panel show up. Click download button and you will get a rpm file.
 
 Next:
-* rpm -i cuda-repo-fedora23-8.0.44-1.x86_64.rpm
-* dnf install cuda
+```bash
+$ sudo rpm -i cuda-repo-fedora23-8.0.44-1.x86_64.rpm
+$ sudo dnf install cuda
+```
 
 And you got cuda on your device.
 
 #### Add to PATH
 Edit your **~/.bashrc** file. Add those:
 
-```sh
+```bash
 export PATH=$PATH:/usr/local/cuda/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
 ```
