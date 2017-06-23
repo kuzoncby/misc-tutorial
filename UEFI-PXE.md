@@ -108,7 +108,7 @@ subnet 10.0.0.0 netmask 255.255.255.0 {
 ## Start Service
 
 ```sh
-systemctl start xinetd dhcpd vsftpd
+systemctl restart tftp xinetd dhcpd
 ```
 
 ## Special thanks to
